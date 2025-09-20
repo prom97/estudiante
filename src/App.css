@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #f9a8d4, #fde68a, #6ee7b7);
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 70%;
+}
+
+.marca-agua {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.8rem;
+  color: rgba(43, 43, 43, 0.829);
+  /* blanco semi-transparente */
+  pointer-events: none;
+  /* no molesta si se hace click cerca */
+  font-style: italic;
+}
+
+.titulo-principal {
+  font-size: 3rem;
+}
+
+.frase {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0 40px;
+}
+
+.matrix-title {
+  display: inline-block;
+  /* permite controlar ancho */
+  width: 28ch;
+  /* ancho suficiente para tu texto */
+  text-align: center;
+}
+
+/* Ajustes en pantallas menores a 600px */
+@media (max-width: 800px) {
+  .titulo-principal {
+    font-size: 2rem;
+  }
+
+  .frase {
+    font-size: 1rem;
+    padding: 0 1rem;
+    /* margen interno para que no se pegue a los bordes */
+
+  }
+}
